@@ -1,0 +1,745 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('fonts/Manrope-Regular.ttf') format('ttf');
+}
+
+html{
+    background-color: #141414;
+    font-size: 80%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+}
+section button{
+    background-color: transparent;
+    border: none;
+}
+section img{
+    display: inline-block; /* Set display property to inline-block */
+    vertical-align: middle; /* Align vertically in the middle */
+    margin: 0 10px; /* Optional: Add margin between images */;
+}
+
+.switchMode img{
+    margin-right: 150px;
+    padding-top: 4px;
+}
+
+.col-sm-1 img{
+    margin-left: 50px;
+}
+
+.buttons{
+    margin-right: 50px;
+}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+  }
+  
+  /* The popup form - hidden by default */
+.form-popup {
+    display: none; /* Hide the popup by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the popup */
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+.form-container {
+    max-width: 350px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #08D3FF;
+    color: #070707;
+    font-weight: bold;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 1;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+.modes {
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mode{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modes button {
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.modeRow{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.modeRow h2{
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+    padding-top: 15px;
+}
+
+.divWrapper{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.paragrafWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.paragrafWrapper p{
+    text-align: left;
+}
+
+.desc{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.desc h1{
+    margin-bottom: 30px;
+}
+
+.desc h2{
+    color: #00FFFF;
+    margin-top: 30px;
+}
+
+.desc p{
+    margin-bottom: 20px;
+}
+
+.desc h2{
+    margin-bottom: 20px;
+}
+
+.desc h5{
+    margin-bottom: 40px;
+}
+
+.mengapaKita{
+    color: white;
+    margin-bottom: 50px;
+}
+
+.mengapaKita h2{
+    color: #00FFFF;
+    margin-bottom: 40px;
+}
+
+.mengapaKita img{
+    width: 65%;
+    height: 65%;
+}
+
+.caraKerja{
+    color: white;
+    margin-top: -40px;
+}
+
+.caraKerja h2{
+    
+    margin-bottom: 40px;
+}
+
+.caraKerja img{
+    width: 65%;
+    height: 65%;
+}
+
+.FaQ{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* 
+.FaQ2{
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+}
+
+.FaQ2 h2{
+    color: white;
+    margin-bottom: 30px;
+} */
+
+.faqWrapper{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: left;
+    padding-left: 300px;
+    flex-direction: row;
+}
+
+.pemilihanMode{
+    color: white;
+    text-align: center;
+}
+
+.games{
+    display: inline;
+    justify-content: space-between;
+    gap: 3em;
+    text-align: center;
+}
+
+.cari-btns button{
+    background-color: transparent;
+    border: 0;
+    margin-bottom: 30px;
+}
+
+.sellerRegisterBtn, .profileBtn{
+    background-color: #FAFF12;
+    border: none;
+    padding: .35em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.cari-btns button img{
+    width: 75%;
+}
+
+.sellerBg {
+    position: relative;
+}
+
+.contentSeller {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white; /* Change the text color if needed */
+}
+
+.contentSeller h1,
+.contentSeller h3 {
+    margin: 10px;
+}
+
+.contentSeller h3{
+    color: #546B70;
+}
+
+.contentSeller button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: none;
+}
+
+.containDetail a{
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    text-align: center;
+    justify-content: left;
+    margin-left: 50em;
+    text-decoration: none;
+}
+
+.containDetail button{
+    background-color: transparent;
+    border: none;
+}
+
+.containDetail img{
+    margin-right: 10px;
+    width: 12px;
+}
+
+.containDetail p{
+    font-size: medium;
+    color: white;
+}
+
+.detailTabs button {
+    background-color: transparent; /* Transparent button background */
+    border: none;
+}
+
+.detailTabs button a div {
+    background-color: #171A1B; /* Grey background color for div */
+    padding: 20px; /* Add some padding for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.detailTabs button a{
+    text-decoration: none;
+}
+
+.detailTabs {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    justify-content: center;
+    gap: 6em;
+    margin-top: 2em;
+}
+
+.tabs{
+    color: white;
+    text-align: left;
+}
+
+.tabs p{
+    color: #535D60;
+}
+
+.profileForm{
+    background-color: #171A1B; /* Grey background color for div */
+    padding: 2em; /* Add some padding for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.profileSection{
+    margin-top: 2em;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+}
+
+.profileSection img {
+    margin-right: 20px; /* Add some spacing between the image and form */
+}
+
+.profileSection label{
+    color: white;
+}
+
+.profileForm label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 10px; /* Add spacing between labels and inputs */
+    color: white;
+}
+
+.profileForm input {
+    width: 100%; /* Make inputs take the full width of the container */
+    padding: 8px; /* Add padding for better styling */
+    margin-bottom: 15px; /* Add spacing between inputs */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 10px;
+    border: none;
+    background-color: #222222;
+}
+
+.profileForm button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Add some hover effects to the button */
+.profileForm button:hover {
+    background-color: #45a049;
+}
+
+.dompetTabs {
+    background-color: #171A1B; /* Grey background color for div */
+    color: white;
+    padding: 2em; /* Adjust the padding to your preference */
+    margin: 3em 70em 3em 70em;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.dompetFitur a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: #00FFFF;
+    padding: 0.5em; /* Adjust the padding to your preference */
+}
+
+/* .searchingTab{
+    background-color: #171A1B;
+    color: white;
+    border-radius: 8px;
+}
+
+.searchingTab img{
+    width: 10%;
+}
+
+.searching {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+} */
+
+.pair h2,
+.pair p {
+    margin: 0; /* Remove default margin */
+}
+
+.box {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+  
+.box .group {
+    position: fixed;
+    width: 457px;
+    height: 548px;
+    top: 0;
+    left: 0;
+  }
+  
+  .box .overlap {
+    position: relative;
+    width: 445px;
+    height: 548px;
+  }
+  
+  .box .rectangle {
+    width: 392px;
+    height: 548px;
+    top: 0;
+    left: 21px;
+    background-color: #17191a;
+    position: absolute;
+    border-radius: 20px;
+  }
+  
+  .box .div {
+    width: 338px;
+    height: 64px;
+    top: 333px;
+    left: 48px;
+    background-color: #222628;
+    position: absolute;
+    border-radius: 20px;
+  }
+  
+  .box .rectangle-2 {
+    width: 338px;
+    height: 32px;
+    top: 475px;
+    left: 49px;
+    background-color: #222628;
+    position: absolute;
+    border-radius: 20px;
+  }
+  
+  .box .ellipse {
+    width: 132px;
+    height: 136px;
+    top: 93px;
+    left: 152px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .box .text-wrapper {
+    position: absolute;
+    width: 433px;
+    top: 33px;
+    left: 1px;
+    font-family: "Manrope-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.6px;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-2 {
+    position: absolute;
+    width: 433px;
+    top: 352px;
+    left: 12px;
+    font-family: "Manrope-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -0.45px;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-3 {
+    position: absolute;
+    width: 433px;
+    top: 481px;
+    left: 1px;
+    font-family: "Manrope-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -0.45px;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-4 {
+    position: absolute;
+    width: 75px;
+    top: 419px;
+    left: 66px;
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -0.45px;
+    line-height: normal;
+  }
+  
+  .box .estimasi {
+    position: absolute;
+    width: 433px;
+    top: 292px;
+    left: 0;
+    font-family: "Manrope-Medium", Helvetica;
+    font-weight: 500;
+    color: #545455;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: -0.48px;
+    line-height: normal;
+  }
+  
+  .box .element {
+    position: absolute;
+    width: 433px;
+    top: 248px;
+    left: 0;
+    font-family: "Manrope-ExtraBold", Helvetica;
+    font-weight: 800;
+    color: transparent;
+    font-size: 30px;
+    text-align: center;
+    line-height: normal;
+  }
+  
+  .box .span {
+    color: #ffffff;
+    letter-spacing: -3px;
+  }
+  
+  .box .text-wrapper-5 {
+    color: #faff12;
+    letter-spacing: -0.9px;
+  }
+  
+  .box .overlap-group-wrapper {
+    position: absolute;
+    width: 228px;
+    height: 53px;
+    top: 411px;
+    left: 179px;
+  }
+  
+  .box .overlap-group {
+    position: relative;
+    width: 224px;
+    height: 53px;
+  }
+  
+  .box .text-wrapper-6 {
+    position: absolute;
+    width: 96px;
+    top: 0;
+    left: 4px;
+    font-family: "Puritan-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: -0.54px;
+    line-height: normal;
+  }
+  
+  .box .text-wrapper-7 {
+    position: absolute;
+    width: 224px;
+    top: 16px;
+    left: 0;
+    font-family: "Manrope-Regular", Helvetica;
+    font-weight: 400;
+    color: #bfbfbf;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: -0.42px;
+    line-height: normal;
+  }
+  
+  .box .div-h {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 15px;
+    left: 9px;
+  }
+  
+  .box .img {
+    width: 58px;
+    height: 53px;
+    top: 339px;
+    left: 66px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .box .group-2 {
+    position: absolute;
+    width: 26px;
+    height: 21px;
+    top: 481px;
+    left: 104px;
+  }
+  
+/* 
+.carousel{
+    width: 100vw;
+    height:100vw;
+    position: relative;
+}
+
+.carousel > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide > img{
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active]{
+    opacity: 1;
+}
+
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 25%;
+    transform: translateY(-50%);
+    color: rgba(red, green, blue, alpha);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.carousel-button:hover, .carousel-button:focus{
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.carousel-button:focus{
+    outline: 1px solid black;
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+
+.carousel-button.prev{
+    right: 1rem;
+} */
